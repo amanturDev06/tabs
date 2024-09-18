@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(90deg,red,blue,red,blue);
+   font-family: sans-serif;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.tabs img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+
+.tabs input {
+    display: none;
+}
+
+.group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 60px;
+}
+
+.group label {
+    color: white;
+    background: black;
+    padding: 15px 35px;
+    margin: 0 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs img {
+    padding: 0 20px;
+}
+
+#instagram:checked ~ .facebook,
+#instagram:checked ~ .whatsapp,
+#instagram:checked ~ .twitter {
+    /*display: none;*/
+    opacity: 0.2;
+    transition: .4s;
+}
+
+#facebook:checked ~ .instagram,
+#facebook:checked ~ .whatsapp,
+#facebook:checked ~ .twitter {
+    /*display: none;*/
+    opacity: 0.2;
+    transition: .4s;
+}
+
+#whatsapp:checked ~ .instagram,
+#whatsapp:checked ~ .facebook,
+#whatsapp:checked ~ .twitter {
+    /*display: none;*/
+    opacity: 0.2;
+    transition: .4s;
+}
+
+#twitter:checked ~ .instagram,
+#twitter:checked ~ .facebook,
+#twitter:checked ~ .whatsapp {
+    /*display: none;*/
+    opacity: 0.2;
+    transition: .4s;
+}
+
+
+
+
+
+
